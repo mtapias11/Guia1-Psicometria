@@ -25,27 +25,26 @@
       color: var(--text-main);
     }
 
-    /* EL TRUCO PARA OCULTAR EL "LAST MODIFIED" */
+    /* TRUCO PARA OCULTAR EL "LAST MODIFIED" DE XMIND */
     .map-wrapper {
       background: white;
       padding: 20px;
       border-radius: 15px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.05);
       border: 1px solid var(--pastel-pink-dark);
-      overflow: hidden; /* Corta lo que sobresalga */
+      overflow: hidden;
     }
 
     .iframe-container {
       position: relative;
       width: 100%;
       aspect-ratio: 16 / 9;
-      overflow: hidden; /* Asegura el recorte interno */
+      overflow: hidden;
       border-radius: 10px;
     }
 
     iframe {
       width: 100%;
-      /* Hacemos el iframe un 5% más alto para empujar el texto hacia abajo */
       height: 105%; 
       position: absolute;
       top: 0;
@@ -53,7 +52,7 @@
       border: none;
     }
 
-    /* ESTILOS DE CABECERA Y TEXTOS */
+    /* NAVEGACIÓN */
     nav a {
       text-decoration: none;
       color: var(--accent-color);
@@ -66,28 +65,27 @@
 
     nav a:hover { background-color: var(--pastel-pink-dark); color: white; }
 
+    /* SECCIÓN DE REFERENCIAS */
     .references-section {
       background: white;
       border-radius: 15px;
-      border-left: 5px solid var(--accent-color);
+      border-left: 6px solid var(--accent-color);
     }
 
     .references-list { list-style: none; padding-left: 0; }
     .references-list li {
-      margin-bottom: 12px;
-      padding-left: 2rem;
-      text-indent: -2rem;
-      font-size: 0.95rem;
+      margin-bottom: 15px;
+      padding-left: 2.5rem;
+      text-indent: -2.5rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
     }
 
-    /* Ajuste para Pantalla Completa */
-    .map-wrapper:fullscreen {
-      padding: 0;
-      background: #fff;
-    }
-    .map-wrapper:fullscreen iframe {
-      height: 100%; /* En pantalla completa mostramos todo el visor */
-    }
+    .references-list strong { color: var(--accent-color); }
+
+    /* Pantalla completa */
+    .map-wrapper:fullscreen { padding: 0; background: #fff; }
+    .map-wrapper:fullscreen iframe { height: 100%; }
   </style>
 </head>
 <body>
@@ -107,7 +105,7 @@
 
       <nav class="mt-4">
         <a href="#mapa">Visualizar Mapa</a>
-        <a href="#referencias">Bibliografía</a>
+        <a href="#referencias">Bibliografía Completa</a>
       </nav>
     </div>
   </header>
@@ -132,19 +130,28 @@
     </section>
 
     <section id="referencias" class="references-section p-4 my-5 shadow-sm">
-      <h2 style="font-family: 'Fraunces', serif; color: var(--accent-color); margin-bottom: 20px;">Referencias Bibliográficas</h2>
+      <h2 style="font-family: 'Fraunces', serif; color: var(--accent-color); margin-bottom: 25px;">Referencias Bibliográficas</h2>
       <ul class="references-list">
-        <li><strong>Anastasi, A., & Urbina, S. (1998).</strong> <em>Tests psicológicos</em>. Prentice Hall.</li>
-        <li><strong>Meneses, J. (2013).</strong> <em>Psicometría</em>. Editorial UOC.</li>
-        <li><strong>Cohen, R. J., & Swerdlik, M. E. (2001).</strong> <em>Pruebas y evaluación psicológicas</em>. McGraw-Hill.</li>
-        <li><strong>Hogan, T. P. (2015).</strong> <em>Pruebas psicológicas: Una introducción práctica</em>. Editorial El Manual Moderno.</li>
-        <li><strong>Meneses, J. (2013).</strong> <em>Psicometría</em>. Editorial UOC.</li>
+        <li><strong>Aiken, L. R. (2003).</strong> <em>Tests psicológicos y evaluación</em> (11ª ed.). México: Pearson Educación.</li>
+        <li><strong>Aliaga Tovar, J. (s.f.).</strong> <em>Psicometría: Tests Psicométricos, Confiabilidad y Validez</em>.</li>
+        <li><strong>Beck, A. T., Steer, R. A., y Brown, G. K. (2006).</strong> <em>BDI-II. Inventario de Depresión de Beck. Segunda Edición Manual</em>. Buenos Aires: Paidós.</li>
+        <li><strong>Gulliksen, H. (1950).</strong> <em>Theory of mental tests</em>. New York: Wiley.</li>
+        <li><strong>Hambleton, R. K., Swaminathan, H., y Rogers, J. (1991).</strong> <em>Fundamentals of item response theory</em>. Beverly Hills, CA: Sage.</li>
+        <li><strong>International Test Commission (2017).</strong> <em>The ITC Guidelines for translating and adapting Tests</em> (Second edition).</li>
+        <li><strong>Malo Salavarrieta, D. A. (2008).</strong> La medición en psicología como herramienta y como reflexión ética en el ejercicio del psicólogo. <em>Psicogente</em>, 11(19), 46-51.</li>
+        <li><strong>Moreno, R., Martínez, R. J., y Muñiz, J. (2004).</strong> Directrices para la construcción de ítems de elección múltiple. <em>Psicothema</em>, 16(3), 490-497.</li>
+        <li><strong>Muñiz, J. (2010).</strong> Las teorías de los tests: Teoría Clásica y Teoría de Respuesta a los Ítems. <em>Papeles del Psicólogo</em>, 31(1), 57-66.</li>
+        <li><strong>Muñiz, J. (2018).</strong> <em>Introducción a la psicometría</em>. Madrid: Pirámide.</li>
+        <li><strong>Muñiz, J., y Fonseca-Pedrero, E. (2019).</strong> Diez pasos para la construcción de un test. <em>Psicothema</em>, 31(1), 7-16.</li>
+        <li><strong>Prieto, G., y Delgado, A. R. (2010).</strong> Fiabilidad y validez. <em>Papeles del Psicólogo</em>, 31(1), 67-74.</li>
+        <li><strong>Raven, J., Raven, J. C., y Court, J. H. (1993).</strong> <em>Test de Matrices Progresivas. Escalas Coloreada, General y Avanzada. Manual</em>. Buenos Aires: Paidós.</li>
+        <li><strong>Wechsler, D. (2012).</strong> <em>WAIS-IV (Escala de Inteligencia de Wechsler para Adultos-IV). Manual técnico y de interpretación</em>. Madrid: Pearson Educación.</li>
       </ul>
     </section>
   </main>
 
   <footer style="background-color: var(--pastel-pink); border-top: 1px solid var(--pastel-pink-dark);" class="text-center p-3">
-    <p style="font-size: 0.85rem; margin: 0;">© 2026 Recurso Académico.</p>
+    <p style="font-size: 0.85rem; margin: 0;">© 2026 Recurso Académico - Medición Psicológica</p>
   </footer>
 
   <script>
