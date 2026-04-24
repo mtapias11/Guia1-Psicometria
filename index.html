@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Actividad Individual 1</title>
-  <!-- Bootstrap CSS CDN -->
+  <title>Mapa Mental: Medición Psicológica</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <style>
+    /* Estilos exactos de tu paleta visual anterior */
     a {
       text-decoration: none;
       color: rgb(53, 218, 247);
@@ -31,150 +30,118 @@
     }
 
     body {
-      background-color: #2edddd48;
-      padding: 20px;
+      background-color: #2edddd48; /* Fondo cian suave */
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Estilo para el contenedor del mapa */
+    .map-wrapper {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Estilo de lista para referencias */
+    .references-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .references-list li {
+      margin-bottom: 15px;
+      padding-left: 2rem;
+      text-indent: -2rem;
     }
   </style>
 </head>
 <body>
 
-  <header style="background-color: #f5097f8a; color: white;" class="text-center p-4">
-    <h1>Bienvenidos a Mi Página Web</h1>
-    <p>Guía 1</p>
-    <nav>
-      <a href="#formulario" class="text-white">Formulario</a>
-      <a href="#tabla" class="text-white">Tabla</a>
-      <a href="#linea-tiempo" class="text-white">Línea de Tiempo</a>
-      <a href="#audio" class="text-white">Audio</a>
-      <a href="#video" class="text-white">Video</a>
-    </nav>
+<header style="background-color: #fce4ec; color: #4a4a4a; border-bottom: 2px solid #f8bbd0;" class="text-center py-4 px-3">
+    <div class="container">
+      <h1 style="font-family: 'Fraunces', serif; font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; color: #d81b60; text-transform: uppercase; letter-spacing: 1px;">
+        Mapa Mental: Términos, Instrumentos y Clasificación de Pruebas Psicológicas
+      </h1>
+      
+      <p class="mb-3" style="font-size: 0.9rem; color: #6d6a63; font-weight: 500;">
+        Introducción a la Medición Psicológica: Conceptos, Historia y Principios Éticos — Guía 1
+      </p>
+
+      <div style="background-color: rgba(255, 255, 255, 0.5); border-radius: 8px; padding: 10px; display: inline-block;">
+        <p class="mb-1" style="font-size: 0.8rem; font-weight: 700; color: #d81b60;">AUTORAS:</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3" style="font-size: 0.85rem; color: #4a4a4a;">
+          <span>Ingrid Marisol Hernández Carvajal</span>
+          <span>Liceth Paola Palacios Castellanos</span>
+          <span>Catalina Prada Gamboa</span>
+          <span>Maria Jose Tapias Ortiz</span>
+        </div>
+      </div>
+
+      <nav class="mt-3">
+        <a href="#mapa" class="text-decoration-none mx-2" style="color: #d81b60; font-weight: 600; font-size: 0.9rem;">Mapa Mental</a>
+        <a href="#referencias" class="text-decoration-none mx-2" style="color: #d81b60; font-weight: 600; font-size: 0.9rem;">Referencias</a>
+      </nav>
+    </div>
   </header>
 
   <main class="container my-5">
-    <section>
-      <h2>Actividad 1.</h2>
-      <p>Realice una línea de tiempo con la historia de HTML y CSS donde destaque los principales hitos.</p>
-    </section>
-
-    <section id="linea-tiempo" class="my-5">
-      <h2>Línea de Tiempo</h2>
-      <img src="Imagenes-de-pagina/linea_de_tiempo_html_css.png" alt="Línea de Tiempo de HTML y CSS" class="img-fluid mb-3">
-      <p>
-        <a href="https://www.canva.com/design/DAGz6daXMAA/owgHGnI0uNOrpk4b1H0uNQ/view?utm_content=DAG" target="_blank">
-          Ver diseño en Canva
-        </a>
-      </p>
-    </section>
-
-    <section>
-      <h2>Actividad 2.</h2>
-      <p>Este proyecto consiste en el desarrollo de una página web que permite implementar diversos componentes y recursos como formularios, tablas, audios y videos.</p>
-      <a href="https://getbootstrap.com/" target="_blank">Visita Bootstrap para saber más</a>
-    </section>
-
-    <section id="audio" class="my-5">
-      <h2>Explicación del Proyecto (Audio)</h2>
-      <audio controls>
-        <source src="Sonido/audiocleaner_20250927_102727_translator.mp3" type="audio/mpeg">
-        Tu navegador no soporta la reproducción de audio.
-      </audio>
-    </section>
-
-    <section id="video" class="my-5">
-      <h2>Video de Introducción</h2>
-      <video controls class="w-100">
-        <source src="Video/Videointroduccion.mp4" type="video/mp4">
-        Tu navegador no soporta la reproducción de video.
-      </video>
-    </section>
-
-    <section id="tabla" class="my-5">
-      <h2>Tabla Comparativa</h2>
-      <table class="table table-bordered table-striped">
-        <thead class="table-info">
-          <tr>
-            <th>Característica</th>
-            <th>Función principal</th>
-            <th>Tipo de lenguaje</th>
-            <th>Sintaxis básica</th>
-            <th>Ubicación en el documento</th>
-            <th>Relación</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML (HyperText Markup Language)</td>
-            <td>Estructura y contenido de la página web</td>
-            <td>Lenguaje de marcado</td>
-            <td>&lt;h1&gt;, &lt;p&gt;, &lt;img&gt;, &lt;table&gt;, &lt;form&gt;</td>
-            <td>Dentro del archivo .html</td>
-            <td>Es la base sobre la que CSS y Bootstrap aplican estilos y diseño.</td>
-          </tr>
-          <tr>
-            <td>CSS (Cascading Style Sheets)</td>
-            <td>Estilo y presentación visual de la página web</td>
-            <td>Lenguaje de estilos</td>
-            <td>color: red;, font-size: 16px;, margin: 10px;</td>
-            <td>Dentro del archivo .css o en la sección &lt;style&gt; del HTML</td>
-            <td>Se usa para personalizar la apariencia de los elementos HTML.</td>
-          </tr>
-          <tr>
-            <td>Bootstrap</td>
-            <td>Framework que facilita el diseño responsivo y estilizado</td>
-            <td>Biblioteca basada en CSS y JavaScript</td>
-            <td>class="btn btn-primary", class="container"</td>
-            <td>Se incluye mediante &lt;link&gt; a la CDN o archivo local</td>
-            <td>Bootstrap usa clases CSS que se aplican a elementos HTML para darles estilo y funcionalidad.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="formulario" class="my-5">
-      <h2>Formulario de Contacto</h2>
-      <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-6">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" required autofocus>
-          <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+    
+    <section id="mapa" class="mb-5">
+      <h2 class="mb-4">Visualización del Mapa Mental</h2>
+      <div class="map-wrapper">
+        <div class="iframe-container">
+          <iframe 
+            src="https://app.xmind.com/embed/HE1V2Aku?sheet-id=72dd9d71-c85d-4aa1-b6e8-efaf887e5230" 
+            allow="fullscreen" 
+            scrolling="no">
+          </iframe>
         </div>
-        <div class="col-md-6">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
-          <div class="invalid-feedback">Correo inválido.</div>
+        <div class="mt-3 text-end">
+          <a href="https://app.xmind.com/embed/HE1V2Aku" target="_blank" class="btn btn-sm btn-outline-info" style="color: #000;">Ver en XMind</a>
         </div>
-        <div class="col-md-6">
-          <label for="fecha" class="form-label">Fecha de Nacimiento</label>
-          <input type="date" class="form-control" id="fecha" name="fecha" required>
-          <div class="invalid-feedback">Selecciona una fecha válida.</div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-success" type="submit">Enviar</button>
-        </div>
-      </form>
+      </div>
     </section>
+
+    <section id="referencias" class="my-5 p-4 bg-white rounded-3 shadow-sm">
+      <h2 class="mb-4 border-bottom pb-2">Referencias Bibliográficas</h2>
+      <ul class="references-list">
+        <li>
+          <strong>Anastasi, A., & Urbina, S. (1998).</strong> <em>Tests psicológicos</em>. Prentice Hall.
+        </li>
+        <li>
+          <strong>Cohen, R. J., & Swerdlik, M. E. (2001).</strong> <em>Pruebas y evaluación psicológicas</em>. McGraw-Hill.
+        </li>
+        <li>
+          <strong>Hogan, T. P. (2015).</strong> <em>Pruebas psicológicas: Una introducción práctica</em>. Editorial El Manual Moderno.
+        </li>
+        <li>
+          <strong>Meneses, J. (2013).</strong> <em>Psicometría</em>. Editorial UOC.
+        </li>
+      </ul>
+    </section>
+
   </main>
 
   <footer style="background-color: #f5097f8a; color: white;" class="text-center p-3">
-    <p>© 2025 Mi Página Web Guía 1. Este sitio fue creado con fines educativos, las imágenes y videos son referenciales.</p>
+    <p>© 2026 Actividad Grupal - Psicometría. Creado con fines académicos.</p>
   </footer>
-  <!-- Bootstrap JS Bundle CDN (includes Popper) -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    (() => {
-      'use strict';
-      const forms = document.querySelectorAll('.needs-validation');
-      Array.from(forms).forEach(form => {
-        form.addEventListener('submit', event => {
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    })();
-  </script>
 
 </body>
 </html>
